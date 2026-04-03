@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin, FileText } from "lucide-react";
+import { Mail, MapPin, FileText, Linkedin, Phone } from "lucide-react";
 
 export function Footer() {
   const year = new Date().getFullYear();
@@ -14,7 +14,8 @@ export function Footer() {
 
   const contact = [
     { icon: <Mail className="w-4 h-4" />, label: "ghazankhanadeem@gmail.com", href: "mailto:ghazankhanadeem@gmail.com" },
-    { icon: <Phone className="w-4 h-4" />, label: "+92 330 2430098", href: "tel:+923302430098" },
+    { icon: <Phone className="w-4 h-4" />, label: "WhatsApp: +92 348 906 6945", href: "https://wa.me/923489066945" },
+    { icon: <Linkedin className="w-4 h-4" />, label: "LinkedIn", href: "https://www.linkedin.com/in/ghazan-khan-464851199" },
     { icon: <MapPin className="w-4 h-4" />, label: "Swabi, KPK, Pakistan", href: "#contact" },
   ];
 

@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Section } from "./Section";
-import { Mail, Phone, MapPin, CheckCircle2 } from "lucide-react";
+import { Mail, Phone, MapPin, CheckCircle2, Linkedin } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -56,15 +56,15 @@ export function Contact() {
     },
     {
       icon: <Phone className="w-5 h-5" />,
-      label: "Phone",
-      value: "(+92) 330 243 0098",
-      link: "tel:+923302430098"
-    },
-    {
-      icon: <Phone className="w-5 h-5" />,
       label: "WhatsApp",
       value: "+92 348 906 6945",
       link: "https://wa.me/923489066945"
+    },
+    {
+      icon: <Linkedin className="w-5 h-5" />,
+      label: "LinkedIn",
+      value: "Ghazan Khan",
+      link: "https://www.linkedin.com/in/ghazan-khan-464851199"
     },
     {
       icon: <MapPin className="w-5 h-5" />,

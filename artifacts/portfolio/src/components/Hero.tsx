@@ -131,7 +131,7 @@ export function Hero() {
               {/* Floating badges */}
               {/* MRI badge — top right */}
               <motion.div
-                className="absolute top-10 -right-4 lg:-right-8 bg-background shadow-lg rounded-full px-4 py-2 flex items-center gap-2 z-20 border border-border cursor-default"
+                className="absolute top-2 sm:top-10 -right-2 sm:-right-4 lg:-right-8 bg-background shadow-lg rounded-full px-4 py-2 flex items-center gap-2 z-20 border border-border cursor-default"
                 initial={{ opacity: 0, x: 20 }}
                 animate={{ opacity: 1, x: 0, y: [0, -4, 0] }}
                 transition={{
@@ -149,7 +149,7 @@ export function Hero() {
 
               {/* CT badge — bottom left */}
               <motion.div
-                className="absolute bottom-10 -left-4 lg:-left-8 bg-background shadow-lg rounded-full px-4 py-2 flex items-center gap-2 z-20 border border-border cursor-default"
+                className="absolute bottom-2 sm:bottom-10 -left-2 sm:-left-4 lg:-left-8 bg-background shadow-lg rounded-full px-4 py-2 flex items-center gap-2 z-20 border border-border cursor-default"
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0, y: [0, -4, 0] }}
                 transition={{
@@ -167,7 +167,7 @@ export function Hero() {
 
               {/* U/S badge — bottom right */}
               <motion.div
-                className="absolute bottom-10 -right-4 lg:-right-8 bg-background shadow-lg rounded-full px-4 py-2 flex items-center gap-2 z-20 border border-border cursor-default"
+                className="absolute bottom-2 sm:bottom-10 -right-2 sm:-right-4 lg:-right-8 bg-background shadow-lg rounded-full px-4 py-2 flex items-center gap-2 z-20 border border-border cursor-default"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: [0, -4, 0] }}
                 transition={{
@@ -179,7 +179,7 @@ export function Hero() {
                 <div className="w-8 h-8 rounded-full bg-emerald-500/10 flex items-center justify-center text-emerald-600 font-bold text-xs">
                   U/S
                 </div>
-                <span className="text-sm font-medium">Expert</span>
+                <span className="text-sm font-medium">Tech</span>
               </motion.div>
             </div>
           </motion.div>
