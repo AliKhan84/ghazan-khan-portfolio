@@ -35,8 +35,8 @@ export function Navigation() {
 
   const navLinks = [
     { name: "About", id: "about" },
-    { name: "Skills", id: "skills" },
     { name: "Experience", id: "experience" },
+    { name: "Skills", id: "skills" },
     { name: "Education", id: "education" },
     { name: "Research", id: "research" },
     { name: "Contact", id: "contact" },

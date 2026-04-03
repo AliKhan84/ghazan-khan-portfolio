@@ -129,28 +129,57 @@ export function Hero() {
               </div>
               
               {/* Floating badges */}
-              <motion.div 
-                className="absolute top-10 -right-4 lg:-right-8 bg-background shadow-lg rounded-full px-4 py-2 flex items-center gap-2 z-20 border border-border"
+              {/* MRI badge — top right */}
+              <motion.div
+                className="absolute top-10 -right-4 lg:-right-8 bg-background shadow-lg rounded-full px-4 py-2 flex items-center gap-2 z-20 border border-border cursor-default"
                 initial={{ opacity: 0, x: 20 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ delay: 0.6, duration: 0.6 }}
+                animate={{ opacity: 1, x: 0, y: [0, -5, 0] }}
+                transition={{
+                  opacity: { delay: 0.6, duration: 0.6 },
+                  x: { delay: 0.6, duration: 0.6 },
+                  y: { delay: 0.6, duration: 3, repeat: Infinity, ease: "easeInOut" }
+                }}
+                whileHover={{ scale: 1.1, y: -4, boxShadow: "0 12px 28px rgba(0,0,0,0.15)" }}
               >
-                <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold">
+                <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold text-xs">
                   MRI
                 </div>
                 <span className="text-sm font-medium">Expertise</span>
               </motion.div>
-              
-              <motion.div 
-                className="absolute bottom-10 -left-4 lg:-left-8 bg-background shadow-lg rounded-full px-4 py-2 flex items-center gap-2 z-20 border border-border"
+
+              {/* CT badge — bottom left */}
+              <motion.div
+                className="absolute bottom-10 -left-4 lg:-left-8 bg-background shadow-lg rounded-full px-4 py-2 flex items-center gap-2 z-20 border border-border cursor-default"
                 initial={{ opacity: 0, x: -20 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ delay: 0.8, duration: 0.6 }}
+                animate={{ opacity: 1, x: 0, y: [0, -5, 0] }}
+                transition={{
+                  opacity: { delay: 0.8, duration: 0.6 },
+                  x: { delay: 0.8, duration: 0.6 },
+                  y: { delay: 1.2, duration: 3, repeat: Infinity, ease: "easeInOut" }
+                }}
+                whileHover={{ scale: 1.1, y: -4, boxShadow: "0 12px 28px rgba(0,0,0,0.15)" }}
               >
-                <div className="w-8 h-8 rounded-full bg-accent/10 flex items-center justify-center text-accent font-bold">
+                <div className="w-8 h-8 rounded-full bg-accent/10 flex items-center justify-center text-accent font-bold text-xs">
                   CT
                 </div>
                 <span className="text-sm font-medium">Specialist</span>
+              </motion.div>
+
+              {/* U/S badge — bottom right */}
+              <motion.div
+                className="absolute bottom-10 -right-4 lg:-right-8 bg-background shadow-lg rounded-full px-4 py-2 flex items-center gap-2 z-20 border border-border cursor-default"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: [0, -5, 0] }}
+                transition={{
+                  opacity: { delay: 1.0, duration: 0.6 },
+                  y: { delay: 1.8, duration: 3, repeat: Infinity, ease: "easeInOut" }
+                }}
+                whileHover={{ scale: 1.1, y: -4, boxShadow: "0 12px 28px rgba(0,0,0,0.15)" }}
+              >
+                <div className="w-8 h-8 rounded-full bg-emerald-500/10 flex items-center justify-center text-emerald-600 font-bold text-xs">
+                  U/S
+                </div>
+                <span className="text-sm font-medium">Expert</span>
               </motion.div>
             </div>
           </motion.div>
