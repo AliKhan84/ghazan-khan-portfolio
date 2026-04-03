@@ -120,7 +120,7 @@ export function Hero() {
                 <img 
                   src="/profile.jpg" 
                   alt="Ghazan Khan - Radiology Technologist" 
-                  className="w-full h-full object-cover object-center"
+                  className="w-full h-full object-cover object-top"
                   onError={(e) => {
                     const target = e.target as HTMLImageElement;
                     target.src = "https://ui-avatars.com/api/?name=Ghazan+Khan&size=400&background=0D8ABC&color=fff";
