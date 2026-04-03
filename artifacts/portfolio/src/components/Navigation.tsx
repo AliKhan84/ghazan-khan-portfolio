@@ -124,7 +124,18 @@ export function Navigation() {
                 {link.name}
               </button>
             ))}
-            <div className="pt-4 px-3">
+            <div className="pt-2 px-3">
+              <button
+                onClick={toggleTheme}
+                aria-label={theme === "dark" ? "Switch to light mode" : "Switch to dark mode"}
+                data-testid="button-toggle-theme-menu"
+                className="flex items-center gap-3 w-full px-3 py-3 text-base font-medium text-foreground hover:bg-muted hover:text-primary rounded-md transition-colors"
+              >
+                {theme === "dark" ? <Sun size={18} /> : <Moon size={18} />}
+                {theme === "dark" ? "Light Mode" : "Dark Mode"}
+              </button>
+            </div>
+            <div className="pt-2 px-3">
               <Button asChild variant="default" className="w-full">
                 <a href="/Ghazan_Khan_CV.pdf" target="_blank" rel="noopener noreferrer">
                   Download CV
