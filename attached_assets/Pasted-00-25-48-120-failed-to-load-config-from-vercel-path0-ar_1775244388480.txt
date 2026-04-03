@@ -1,0 +1,32 @@
+00:25:48.120 
+failed to load config from /vercel/path0/artifacts/portfolio/vite.config.ts
+00:25:48.123 
+error during build:
+00:25:48.124 
+Error: PORT environment variable is required but was not provided.
+00:25:48.124 
+    at file:///vercel/path0/artifacts/portfolio/node_modules/.vite-temp/vite.config.ts.timestamp-1775244347994-dec30a34ab3ec8.mjs:10:9
+00:25:48.124 
+    at ModuleJob.run (node:internal/modules/esm/module_job:430:25)
+00:25:48.125 
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:661:26)
+00:25:48.125 
+    at async loadConfigFromBundledFile (file:///vercel/path0/node_modules/.pnpm/vite@7.3.1_@types+node@25.3.5_jiti@2.6.1_lightningcss@1.31.1_tsx@4.21.0_yaml@2.8.2/node_modules/vite/dist/node/chunks/config.js:35909:12)
+00:25:48.125 
+    at async bundleAndLoadConfigFile (file:///vercel/path0/node_modules/.pnpm/vite@7.3.1_@types+node@25.3.5_jiti@2.6.1_lightningcss@1.31.1_tsx@4.21.0_yaml@2.8.2/node_modules/vite/dist/node/chunks/config.js:35797:17)
+00:25:48.126 
+    at async loadConfigFromFile (file:///vercel/path0/node_modules/.pnpm/vite@7.3.1_@types+node@25.3.5_jiti@2.6.1_lightningcss@1.31.1_tsx@4.21.0_yaml@2.8.2/node_modules/vite/dist/node/chunks/config.js:35764:42)
+00:25:48.126 
+    at async resolveConfig (file:///vercel/path0/node_modules/.pnpm/vite@7.3.1_@types+node@25.3.5_jiti@2.6.1_lightningcss@1.31.1_tsx@4.21.0_yaml@2.8.2/node_modules/vite/dist/node/chunks/config.js:35413:22)
+00:25:48.126 
+    at async createBuilder (file:///vercel/path0/node_modules/.pnpm/vite@7.3.1_@types+node@25.3.5_jiti@2.6.1_lightningcss@1.31.1_tsx@4.21.0_yaml@2.8.2/node_modules/vite/dist/node/chunks/config.js:33875:19)
+00:25:48.126 
+    at async CAC.<anonymous> (file:///vercel/path0/node_modules/.pnpm/vite@7.3.1_@types+node@25.3.5_jiti@2.6.1_lightningcss@1.31.1_tsx@4.21.0_yaml@2.8.2/node_modules/vite/dist/node/cli.js:629:10)
+00:25:48.151 
+/vercel/path0/artifacts/portfolio:
+00:25:48.151 
+ ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL  @workspace/portfolio@0.0.0 build: `vite build --config vite.config.ts`
+00:25:48.151 
+Exit status 1
+00:25:48.167 
+Error: Command "pnpm --filter @workspace/portfolio run build" exited with 1
