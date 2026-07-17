@@ -30,12 +30,12 @@ export function Experience() {
                 Radiology Technologist
               </h3>
               <span className="inline-block mt-1 md:mt-0 text-sm font-medium text-primary bg-primary/10 px-3 py-1 rounded-full">
-                December 2023 – Present
+                December 2024 – Present
               </span>
             </div>
             
             <p className="text-lg font-medium text-muted-foreground mb-4">
-              Khyber Medical Center | Peshawar, Pakistan
+              Khyber Medical Center | Swabi, Pakistan
             </p>
             
             <div className="bg-card border shadow-sm rounded-xl p-6">
@@ -56,6 +56,58 @@ export function Experience() {
               </ul>
             </div>
           </motion.div>
+
+          {/* Intern entry */}
+          <div className="relative">
+            <motion.div 
+              className="absolute -left-[43px] top-0 w-5 h-5 rounded-full bg-primary flex items-center justify-center ring-4 ring-background"
+              initial={{ scale: 0 }}
+              whileInView={{ scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ type: "spring", stiffness: 300, damping: 20 }}
+            >
+              <div className="w-2 h-2 rounded-full bg-white" />
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+            >
+              <div className="flex flex-col md:flex-row md:items-baseline md:justify-between mb-2">
+                <h3 className="text-xl md:text-2xl font-bold text-foreground flex items-center gap-2">
+                  <Briefcase className="w-5 h-5 text-primary hidden md:block" />
+                  Intern Radiologic Technologist
+                </h3>
+                <span className="inline-block mt-1 md:mt-0 text-sm font-medium text-primary bg-primary/10 px-3 py-1 rounded-full">
+                  01/2024 – 12/2024
+                </span>
+              </div>
+              
+              <p className="text-lg font-medium text-muted-foreground mb-4">
+                Medical Teaching Institute, Mardan Medical Complex (BKMC), Mardan
+              </p>
+              
+              <div className="bg-card border shadow-sm rounded-xl p-6">
+                <h4 className="font-semibold text-foreground mb-3 text-sm uppercase tracking-wider">Key Responsibilities & Achievements</h4>
+                <ul className="space-y-3 text-foreground/80">
+                  <li className="flex items-start">
+                    <span className="mr-3 text-primary mt-1">•</span>
+                    <span>Enhanced clinical skills in radiology department having CT, MRI, Digital Radiography, Fluoroscopy and Ultrasound.</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="mr-3 text-primary mt-1">•</span>
+                    <span>Embraced the core values of work ethics, ensuring a respectful and responsible approach to healthcare practices.</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="mr-3 text-primary mt-1">•</span>
+                    <span>Sharpened communication skills through regular interactions with patients, creating a comfortable and informative environment.</span>
+                  </li>
+                </ul>
+              </div>
+            </motion.div>
+          </div>
         </div>
       </div>
     </Section>
